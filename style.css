@@ -105,6 +105,45 @@ nav a:hover {
   object-fit: cover;
 }
 
+/* ===== MISSÃO, VISÃO E VALORES ===== */
+#sobre-missao {
+  background-color: #f0faf5; /* mantém a paleta do Sobre Nós */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#sobre-missao h2 {
+  color: #3b5d4c;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 2.5rem;
+}
+
+.misvisval {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.misvisval .item {
+  background-color: #e9f6ef;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 250px; 
+}
+.misvisval .item ul li {
+  background-color: #d9f2e3;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #3b5d4c;
+}
+
 
 /* Títulos */
 h1, h2, h3 {
@@ -363,5 +402,5 @@ footer {
   nav a {
     font-size: 0.9rem;
   }
-}
 
+}
