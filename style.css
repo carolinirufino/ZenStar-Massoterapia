@@ -1,0 +1,367 @@
+/* ===== FONTE ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6fff9;
+  color: #2e3d34;
+  padding-top: 1px; /* altura aproximada da nav */
+  
+}
+
+/* Header */
+header {
+  background-color: #a8d5ba;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 40px; /* empurra o header para baixo, evitando sobreposição */
+}
+
+/* Navegação */
+nav {
+  position: fixed;                /* fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(207, 233, 216, 0.95); /* leve transparência */
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;                  /* garante que fique acima do conteúdo */
+  transition: background 0.3s ease; /* transição suave */
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2e3d34;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #598b6b;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1587017539504-89ecf9a5ff1e?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.hero h1 {
+  font-family: 'Comfortaa', cursive;
+}
+.hero p {
+  background-color: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* ===== SOBRE NÓS ===== */
+#sobre {
+  background: #f0faf5;   /* verde clarinho relaxante */
+  padding: 4rem 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap; /* no celular fica em coluna */
+}
+
+.sobre-texto {
+  flex: 1 1 400px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2e3d34;
+}
+
+.sobre-texto h2 {
+  color: #3b5d4c;
+  margin-bottom: 1rem;
+  font-family: 'Comfortaa', cursive;
+}
+
+.sobre-imagem {
+  flex: 1 1 400px;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Seções */
+section {
+  padding-left: 10rem; 
+  padding-right: 10rem; 
+  padding-top: 5rem; 
+  text-align: center;
+}
+h2 {
+  color: #3b5d4c;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  
+}
+
+/* Serviços */
+.servicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: #e9f6ef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.preco {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b5d4c;
+  background-color: #d9f2e3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Contato */
+
+.whatsapp {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.whatsapp a {
+  display: inline-block;
+  background-color: #25D366; /* cor oficial do WhatsApp */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.whatsapp a:hover {
+  background-color: #1ebe5d;
+}
+/* Botão WhatsApp */
+.whatsapp a {
+  display: inline-block;
+  background-color: #25D366; /* cor oficial do WhatsApp */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, background 0.3s ease; /* adiciona transição suave */
+}
+
+/* Hover: muda cor e aumenta */
+.whatsapp a:hover {
+  background-color: #1ebe5d; /* cor mais escura ao passar mouse */
+  transform: scale(1.1);     /* aumenta 10% */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aacfb7;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  background: #5ca981;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+button:hover {
+  background: #498c69;
+}
+
+.mapa {
+  margin-top: 5rem;
+  text-align: center;
+}
+.mapa h2 {
+  font-family: 'Comfortaa', cursive;
+  color: #3b5d4c;
+  margin-bottom: 1rem;
+}
+.mapa iframe {
+  max-width: 1000px;   /* largura máxima */
+  width: 100%;         /* ocupa todo o espaço no mobile */
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #a8d5ba;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 5rem;
+  min-height: 100px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+
+  .servicos {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .servicos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .mapa iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .preco {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
